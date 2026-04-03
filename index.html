@@ -1,464 +1,639 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pramod Tidke | DevOps Engineer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">PT</a>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">
+          <span class="logo-bracket">[</span>PT<span class="logo-bracket"
+            >]</span
+          >
+        </a>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#certifications" class="nav-link">Certs</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-badge">
+          <span class="badge-dot"></span>
+          Open to work
         </div>
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+      <div class="hero-container">
         <div class="hero-content">
-            <p class="hero-greeting">Hello, I'm</p>
-            <h1 class="hero-title">Pramod Tidke</h1>
-            <p class="hero-subtitle">DevOps Engineer | AWS | Kubernetes | GitOps | CI/CD | Terraform</p>
-            <p class="hero-description">Building production-grade systems with 2+ years of experience in CI/CD pipelines, cloud infrastructure, and containerized workloads.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="Pramod_Tidke_Resume.pdf" class="btn btn-secondary" target="_blank"><i class="fas fa-download"></i> Resume</a>
-            </div>
-            <div class="hero-socials">
-                <a href="https://github.com/ptidke59" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/pramod-tidke" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:pramodtidkework@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
-            </div>
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-title">Pramod Tidke</h1>
+          <p class="hero-role">DevOps Engineer</p>
+          <p class="hero-subtitle">
+            AWS • Kubernetes • GitOps • CI/CD • Terraform
+          </p>
+          <p class="hero-description">
+            Building production-grade systems with 2+ years of experience in
+            CI/CD pipelines, cloud infrastructure, and containerized workloads.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a
+              href="Pramod_Tidke_Resume.pdf"
+              class="btn btn-secondary"
+              target="_blank"
+            >
+              <i class="fas fa-download"></i> Resume
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a
+              href="https://github.com/pramodtidke"
+              target="_blank"
+              class="social-link"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/pramod-tidke"
+              target="_blank"
+              class="social-link"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="mailto:pramodtidkework@gmail.com"
+              class="social-link"
+              aria-label="Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
         </div>
-        <div class="hero-image">
-            <div class="hero-blob"></div>
-            <img src="pramodtidkeheadshot.png" alt="Pramod Tidke" class="profile-img">
+        <div class="hero-terminal">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="terminal-title">pipeline.sh — 80x24</span>
+          </div>
+          <div class="terminal-body" id="terminalBody">
+            <div class="terminal-line">
+              <span class="prompt">$</span>
+              <span class="command">./deploy.sh --environment=production</span>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- Stats Bar -->
+      <div class="stats-bar">
+        <div class="stats-container">
+          <div class="stat-item">
+            <span class="stat-number" data-count="2">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="4">0</span>
+            <span class="stat-suffix"></span>
+            <span class="stat-label">Open Source Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="12">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">AWS Resources Managed</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="65">0</span>
+            <span class="stat-suffix">%</span>
+            <span class="stat-label">Deployment Time Reduced</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <div class="about-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                </div>
-                <div class="about-text">
-                    <h3>DevOps / Cloud Engineer</h3>
-                    <p>I am a DevOps / Cloud Engineer with 2+ years of experience building production-grade systems. I have designed and open-sourced 4 end-to-end DevOps projects covering CI/CD security pipelines, AWS infrastructure-as-code, Kubernetes observability, and GitOps delivery.</p>
-                    <p>I am skilled in automating infrastructure, securing pipelines, and operating containerized workloads at scale. Certified in AWS and Kubernetes, I am targeting DevOps Engineer, Cloud Engineer, and SRE / Platform Engineer roles.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">2+</span>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">4</span>
-                            <span class="stat-label">Open Source Projects</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">3</span>
-                            <span class="stat-label">Certifications</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">12+</span>
-                            <span class="stat-label">AWS Resources</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About</span>
+          <h2 class="section-title">DevOps / Cloud Engineer</h2>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <p class="section-subtitle">Tools and technologies I work with</p>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fas fa-sync-alt skill-icon"></i>
-                    <h4>CI/CD & GitOps</h4>
-                    <ul>
-                        <li>GitHub Actions</li>
-                        <li>Jenkins</li>
-                        <li>GitLab CI/CD</li>
-                        <li>ArgoCD</li>
-                        <li>Flux</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-docker skill-icon"></i>
-                    <h4>Containers & Orchestration</h4>
-                    <ul>
-                        <li>Docker</li>
-                        <li>Kubernetes</li>
-                        <li>Helm</li>
-                        <li>OpenShift</li>
-                        <li>ECS Fargate</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-aws skill-icon"></i>
-                    <h4>Cloud (AWS)</h4>
-                    <ul>
-                        <li>EC2, ECS, S3</li>
-                        <li>IAM, VPC</li>
-                        <li>Lambda</li>
-                        <li>Auto Scaling</li>
-                        <li>CloudWatch</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-code skill-icon"></i>
-                    <h4>Infrastructure as Code</h4>
-                    <ul>
-                        <li>Terraform</li>
-                        <li>Remote State</li>
-                        <li>Multi-Environment</li>
-                        <li>Ansible</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-shield-alt skill-icon"></i>
-                    <h4>DevSecOps</h4>
-                    <ul>
-                        <li>Trivy</li>
-                        <li>GitLeaks</li>
-                        <li>SAST</li>
-                        <li>Secrets Scanning</li>
-                        <li>Image Hardening</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-chart-line skill-icon"></i>
-                    <h4>Monitoring & Observability</h4>
-                    <ul>
-                        <li>Prometheus</li>
-                        <li>Grafana</li>
-                        <li>OpenTelemetry</li>
-                        <li>Distributed Tracing</li>
-                        <li>Alerting</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-code skill-icon"></i>
-                    <h4>Languages & Scripting</h4>
-                    <ul>
-                        <li>Python</li>
-                        <li>Bash</li>
-                        <li>YAML</li>
-                        <li>Groovy</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-database skill-icon"></i>
-                    <h4>Databases & OS</h4>
-                    <ul>
-                        <li>MySQL</li>
-                        <li>MongoDB</li>
-                        <li>Linux (Primary)</li>
-                        <li>Windows</li>
-                        <li>macOS</li>
-                    </ul>
-                </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I am a DevOps / Cloud Engineer with 2+ years of experience
+              building production-grade systems. I have designed and
+              open-sourced 4 end-to-end DevOps projects covering CI/CD security
+              pipelines, AWS infrastructure-as-code, Kubernetes observability,
+              and GitOps delivery.
+            </p>
+            <p>
+              I am skilled in automating infrastructure, securing pipelines, and
+              operating containerized workloads at scale. Certified in AWS and
+              Kubernetes, I am targeting DevOps Engineer, Cloud Engineer, and
+              SRE / Platform Engineer roles.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>4 Open Source DevOps Projects</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>AWS & Kubernetes Certified</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>End-to-End CI/CD Expertise</span>
+              </div>
             </div>
+          </div>
+          <div class="about-image">
+            <img src="pramodtidkeheadshot.png" alt="Pramod Tidke" />
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">DevOps Portfolio Projects</h2>
-            <p class="section-subtitle">End-to-end open source projects</p>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card featured">
-                    <div class="project-image" style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);">
-                        <div class="project-placeholder">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>SecureFlow-CI</h3>
-                        <p class="project-tagline">DevSecOps CI/CD Pipeline</p>
-                        <p>A 5-stage CI/CD pipeline reducing release cycle time from ~25 min to under 4 min. Integrated Trivy vulnerability scanning and GitLeaks secrets detection; caught 3 critical CVEs and 2 hardcoded secrets before production deployment.</p>
-                        <div class="project-highlights">
-                            <div class="highlight"><i class="fas fa-check"></i> 65% reduction in manual deployment effort</div>
-                            <div class="highlight"><i class="fas fa-check"></i> Hardened Docker image (~180 MB)</div>
-                            <div class="highlight"><i class="fas fa-check"></i> Automated build & push to Docker Hub</div>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">GitHub Actions</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Trivy</span>
-                            <span class="tech-tag">GitLeaks</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ptidke59/SecureFlow-CI" target="_blank" class="project-link"><i class="fab fa-github"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card featured">
-                    <div class="project-image" style="background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);">
-                        <div class="project-placeholder">
-                            <i class="fab fa-aws"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>InfraStack-AWS</h3>
-                        <p class="project-tagline">Multi-Environment Cloud Infrastructure</p>
-                        <p>Provisioned 12+ AWS resources across dev and prod environments using Terraform. Deployed containerized app on ECS Fargate with auto-scaling (2-6 tasks), handling 3x traffic spikes with zero downtime.</p>
-                        <div class="project-highlights">
-                            <div class="highlight"><i class="fas fa-check"></i> 80% reduction in manual setup time</div>
-                            <div class="highlight"><i class="fas fa-check"></i> Remote state with S3 & DynamoDB locking</div>
-                            <div class="highlight"><i class="fas fa-check"></i> Cost: ~$45/mo (dev), ~$110/mo (prod)</div>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">Terraform</span>
-                            <span class="tech-tag">AWS</span>
-                            <span class="tech-tag">ECS Fargate</span>
-                            <span class="tech-tag">VPC</span>
-                            <span class="tech-tag">IAM</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ptidke59/InfraStack-AWS" target="_blank" class="project-link"><i class="fab fa-github"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card featured">
-                    <div class="project-image" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
-                        <div class="project-placeholder">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>ObserveX</h3>
-                        <p class="project-tagline">Kubernetes Monitoring & Observability Platform</p>
-                        <p>Full-stack observability for a 3-service microservices application. Deployed on Kubernetes with Prometheus metrics, Grafana dashboards, and OpenTelemetry distributed tracing. Reduced debug time from ~15 min to ~3 min.</p>
-                        <div class="project-highlights">
-                            <div class="highlight"><i class="fas fa-check"></i> 99.9% uptime maintained</div>
-                            <div class="highlight"><i class="fas fa-check"></i> 4 Grafana dashboards built</div>
-                            <div class="highlight"><i class="fas fa-check"></i> 6 alerting rules configured</div>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">Kubernetes</span>
-                            <span class="tech-tag">Prometheus</span>
-                            <span class="tech-tag">Grafana</span>
-                            <span class="tech-tag">OpenTelemetry</span>
-                            <span class="tech-tag">Helm</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ptidke59/ObserveX" target="_blank" class="project-link"><i class="fab fa-github"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card featured">
-                    <div class="project-image" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
-                        <div class="project-placeholder">
-                            <i class="fas fa-sync"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>GitOps-K8s</h3>
-                        <p class="project-tagline">Kubernetes GitOps Delivery Platform</p>
-                        <p>Implemented GitOps delivery pipeline using ArgoCD. Every Git commit automatically syncs to Kubernetes within 90 seconds. Reduced deployment lead time from ~12 min (manual kubectl) to ~90 seconds.</p>
-                        <div class="project-highlights">
-                            <div class="highlight"><i class="fas fa-check"></i> 3 environments managed (dev, staging, prod)</div>
-                            <div class="highlight"><i class="fas fa-check"></i> Helm chart overlays</div>
-                            <div class="highlight"><i class="fas fa-check"></i> ArgoCD RBAC & rollback policies</div>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">ArgoCD</span>
-                            <span class="tech-tag">Kubernetes</span>
-                            <span class="tech-tag">Helm</span>
-                            <span class="tech-tag">GitHub Actions</span>
-                            <span class="tech-tag">Docker</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ptidke59" target="_blank" class="project-link"><i class="fab fa-github"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
         </div>
+
+        <!-- Featured Project: SecureFlow-CI -->
+        <div class="project-featured">
+          <div class="project-info">
+            <div class="project-header">
+              <h3>SecureFlow-CI</h3>
+              <span class="project-tag">Featured</span>
+            </div>
+            <p class="project-description">
+              DevSecOps CI/CD Pipeline — Reduced release cycle time from ~25 min
+              to under 4 min with integrated security scanning.
+            </p>
+            <div class="project-metrics">
+              <div class="metric">
+                <span class="metric-value">~25min → 4min</span>
+                <span class="metric-label">Release Cycle</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">3 CVEs</span>
+                <span class="metric-label">Caught Pre-Prod</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">65%</span>
+                <span class="metric-label">Manual Effort ↓</span>
+              </div>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">GitHub Actions</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Trivy</span>
+              <span class="tech-tag">GitLeaks</span>
+            </div>
+            <a
+              href="https://github.com/pramodtidke"
+              target="_blank"
+              class="project-link"
+            >
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+          <div class="project-terminal">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title">SecureFlow-CI Pipeline</span>
+            </div>
+            <div class="terminal-body static">
+              <div class="terminal-line success">
+                <span class="timestamp">[14:32:01]</span> ✓ Checkout completed
+              </div>
+              <div class="terminal-line success">
+                <span class="timestamp">[14:32:15]</span> ✓ Linting passed
+                (flake8)
+              </div>
+              <div class="terminal-line success">
+                <span class="timestamp">[14:32:28]</span> ✓ Build successful
+              </div>
+              <div class="terminal-line info">
+                <span class="timestamp">[14:32:45]</span> 🔒 Running Trivy
+                scan...
+              </div>
+              <div class="terminal-line success">
+                <span class="timestamp">[14:33:02]</span> ✓ No critical
+                vulnerabilities found
+              </div>
+              <div class="terminal-line info">
+                <span class="timestamp">[14:33:08]</span> 🔍 Running GitLeaks
+                secrets scan...
+              </div>
+              <div class="terminal-line success">
+                <span class="timestamp">[14:33:12]</span> ✓ No secrets detected
+              </div>
+              <div class="terminal-line success">
+                <span class="timestamp">[14:33:25]</span> ✓ Image pushed to
+                registry
+              </div>
+              <div class="terminal-line highlight">
+                <span class="timestamp">[14:33:48]</span> 🚀 Deployed to
+                production
+              </div>
+              <div class="terminal-line summary">
+                Pipeline completed in 3m 47s
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Projects Grid -->
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-card-header">
+              <i class="fab fa-aws project-icon"></i>
+              <div class="project-links">
+                <a href="https://github.com/pramodtidke" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <h3>InfraStack-AWS</h3>
+            <p>
+              Multi-environment AWS infrastructure with Terraform. 12+ resources
+              across dev/prod, ECS Fargate auto-scaling.
+            </p>
+            <div class="project-tech-row">
+              <span>Terraform</span>
+              <span>AWS</span>
+              <span>ECS</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-header">
+              <i class="fas fa-chart-line project-icon"></i>
+              <div class="project-links">
+                <a href="https://github.com/pramodtidke" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <h3>ObserveX</h3>
+            <p>
+              Kubernetes observability platform with Prometheus, Grafana,
+              OpenTelemetry. Reduced debug time 15min → 3min.
+            </p>
+            <div class="project-tech-row">
+              <span>K8s</span>
+              <span>Prometheus</span>
+              <span>Grafana</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-header">
+              <i class="fas fa-sync project-icon"></i>
+              <div class="project-links">
+                <a href="https://github.com/pramodtidke" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <h3>GitOps-K8s</h3>
+            <p>
+              GitOps delivery with ArgoCD. Zero-touch deployment, 90-second sync
+              from Git to K8s cluster.
+            </p>
+            <div class="project-tech-row">
+              <span>ArgoCD</span>
+              <span>Helm</span>
+              <span>GitOps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technologies</span>
+          <h2 class="section-title">Technical Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fas fa-sync-alt"></i>
+            <span>GitHub Actions</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-cog"></i>
+            <span>Jenkins</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-code-branch"></i>
+            <span>GitLab CI/CD</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-rocket"></i>
+            <span>ArgoCD</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-docker"></i>
+            <span>Docker</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-dharmachakra"></i>
+            <span>Kubernetes</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-layer-group"></i>
+            <span>Helm</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-aws"></i>
+            <span>AWS</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-server"></i>
+            <span>Terraform</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-shield-alt"></i>
+            <span>Trivy</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-chart-bar"></i>
+            <span>Prometheus</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-chart-area"></i>
+            <span>Grafana</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-eye"></i>
+            <span>OpenTelemetry</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-terminal"></i>
+            <span>Bash</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-database"></i>
+            <span>MySQL/MongoDB</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Software Engineer – Release & Platform Engineering</h3>
-                            <span class="timeline-date">Mar 2022 – Nov 2023</span>
-                        </div>
-                        <h4>Capgemini Technology Services Pvt Ltd, Navi Mumbai</h4>
-                        <p class="timeline-client">Client: Panasonic Automotive Systems | Domain: Automotive IVI (Linux-based)</p>
-                        <ul class="timeline-list">
-                            <li>Supported release cycles for a Linux-based automotive IVI platform used across 5+ vehicle programs, coordinating builds and deployments across dev, integration, and release branches</li>
-                            <li>Performed log analysis and root-cause debugging across 6+ system modules, reducing average defect resolution time by ~30% through structured triage workflows</li>
-                            <li>Managed end-to-end defect lifecycle for 100+ test cases per release cycle, collaborating with 3 cross-functional teams (firmware, middleware, QA)</li>
-                            <li>Supported system validation in Linux environments, gaining hands-on experience with kernel logs, process management, and environment configuration</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career</span>
+          <h2 class="section-title">Professional Experience</h2>
         </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Software Engineer – Release & Platform Engineering</h3>
+                  <span class="company"
+                    >Capgemini Technology Services Pvt Ltd</span
+                  >
+                </div>
+                <span class="timeline-date">Mar 2022 – Nov 2023</span>
+              </div>
+              <p class="timeline-client">
+                Client: Panasonic Automotive Systems | Domain: Automotive IVI
+                (Linux-based)
+              </p>
+              <ul class="timeline-list">
+                <li>
+                  Supported release cycles for Linux-based automotive IVI
+                  platform across 5+ vehicle programs
+                </li>
+                <li>
+                  Reduced defect resolution time by ~30% through structured
+                  triage workflows
+                </li>
+                <li>
+                  Managed end-to-end defect lifecycle for 100+ test cases per
+                  release cycle
+                </li>
+                <li>
+                  Gained hands-on experience with kernel logs, process
+                  management, and environment configuration
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Certifications Section -->
     <section id="certifications" class="certifications">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="cert-grid">
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fab fa-aws"></i>
-                    </div>
-                    <h3>AWS Certified Solutions Architect</h3>
-                    <p>Associate Level</p>
-                    <span class="cert-badge">Active</span>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-dharmachakra"></i>
-                    </div>
-                    <h3>Certified Kubernetes Administrator</h3>
-                    <p>CKA</p>
-                    <span class="cert-badge">Active</span>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-layer-group"></i>
-                    </div>
-                    <h3>HashiCorp Terraform Associate</h3>
-                    <p>Infrastructure as Code</p>
-                    <span class="cert-badge">Active</span>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-title">Certifications</h2>
         </div>
-    </section>
-
-    <!-- Education Section -->
-    <section class="education">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="edu-card">
-                <div class="edu-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="edu-info">
-                    <h3>Bachelor of Engineering – Computer Science</h3>
-                    <p>G. H. Raisoni Institute of Engineering & Technology, Nagpur</p>
-                </div>
+        <div class="certs-grid">
+          <div class="cert-card earned">
+            <div class="cert-icon">
+              <i class="fab fa-aws"></i>
             </div>
+            <h3>AWS Solutions Architect</h3>
+            <span class="cert-level">Associate</span>
+            <span class="cert-status">In Progress</span>
+          </div>
+          <div class="cert-card earned">
+            <div class="cert-icon">
+              <i class="fas fa-dharmachakra"></i>
+            </div>
+            <h3>Certified Kubernetes Administrator</h3>
+            <span class="cert-level">CKA</span>
+            <span class="cert-status">Earned</span>
+          </div>
+          <div class="cert-card earned">
+            <div class="cert-icon">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <h3>Terraform Associate</h3>
+            <span class="cert-level">HashiCorp</span>
+            <span class="cert-status">Earned</span>
+          </div>
+          <div class="cert-card in-progress">
+            <div class="cert-icon">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <h3>AWS DevOps Engineer</h3>
+            <span class="cert-level">Professional</span>
+            <span class="cert-status">In Progress</span>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Let's connect and discuss opportunities</p>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:pramodtidkework@gmail.com">pramodtidkework@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <a href="tel:+917038302639">+91 7038302639</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Pune, India</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-globe"></i>
-                        <div>
-                            <h4>Website</h4>
-                            <a href="https://pramodtidke.in" target="_blank">pramodtidke.in</a>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
         </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Let's build something together</h3>
+            <p>
+              I'm currently open to DevOps Engineer, Cloud Engineer, and SRE /
+              Platform Engineer roles. Feel free to reach out!
+            </p>
+            <div class="contact-links">
+              <a href="mailto:pramodtidkework@gmail.com" class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <span class="label">Email</span>
+                  <span class="value">pramodtidkework@gmail.com</span>
+                </div>
+              </a>
+              <a href="tel:+917038302639" class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <span class="label">Phone</span>
+                  <span class="value">+91 7038302639</span>
+                </div>
+              </a>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <span class="label">Location</span>
+                  <span class="value">Pune, India</span>
+                </div>
+              </div>
+              <a
+                href="https://github.com/pramodtidke"
+                target="_blank"
+                class="contact-item"
+              >
+                <i class="fab fa-github"></i>
+                <div>
+                  <span class="label">GitHub</span>
+                  <span class="value">github.com/pramodtidke</span>
+                </div>
+              </a>
+              <a
+                href="https://linkedin.com/in/pramod-tidke"
+                target="_blank"
+                class="contact-item"
+              >
+                <i class="fab fa-linkedin"></i>
+                <div>
+                  <span class="label">LinkedIn</span>
+                  <span class="value">linkedin.com/in/pramod-tidke</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <input type="text" id="name" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2024 Pramod Tidke. All rights reserved.</p>
-                <div class="footer-socials">
-                    <a href="https://github.com/ptidke59" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/pramod-tidke" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:pramodtidkework@gmail.com"><i class="fas fa-envelope"></i></a>
-                    <a href="https://pramodtidke.in" target="_blank"><i class="fas fa-globe"></i></a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <p>
+            &copy; 2024 Pramod Tidke. Built with
+            <i class="fas fa-heart"></i> and DevOps principles.
+          </p>
+          <div class="footer-links">
+            <a href="https://github.com/pramodtidke" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://linkedin.com/in/pramod-tidke" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="mailto:pramodtidkework@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
         </div>
+      </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
