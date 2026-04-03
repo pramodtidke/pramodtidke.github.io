@@ -259,23 +259,14 @@ body {
     }
 }
 
-.profile-img-container {
+.profile-img {
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    background: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    object-fit: cover;
     box-shadow: var(--shadow-lg);
     z-index: 1;
     border: 5px solid var(--white);
-}
-
-.profile-icon {
-    font-size: 8rem;
-    color: var(--primary-color);
-    opacity: 0.8;
 }
 
 /* Section Styles */
@@ -930,13 +921,9 @@ section {
         margin-right: auto;
     }
 
-    .profile-img-container {
+    .profile-img {
         width: 280px;
         height: 280px;
-    }
-
-    .profile-icon {
-        font-size: 6rem;
     }
 
     .hero-blob {
@@ -1042,13 +1029,9 @@ section {
         font-size: 0.9rem;
     }
 
-    .profile-img-container {
+    .profile-img {
         width: 220px;
         height: 220px;
-    }
-
-    .profile-icon {
-        font-size: 5rem;
     }
 
     .hero-blob {
